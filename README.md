@@ -24,3 +24,36 @@ def get_flux_rod(
   else:
     return (L / (2 * math.pi * H * D)) * math.arctan(H / (2 * D))
 ```
+
+## Proof
+
+### Assumptions
+
+The equation for flux from a point source:
+$F = \frac{L}{4 \pi D^2}$
+
+The distance from a point $x$ on the rod to the observer:
+$D_{seg} = \sqrt{D^2 + x^2}$
+
+The luminosity of an infinitely small segment of the rod:
+$L_{seg} = \frac{L dx}{H}$
+
+### Process
+
+$F_{seg} = \frac{L_{seg}}{4 \pi D_{seg}^2}$
+
+$F_{seg} = \frac{L dx / H}{4 \pi (D^2 + x^2)}$
+
+$F_{seg} = \frac{L}{4 \pi H} * \frac{dx}{D^2 + x^2}$
+
+$F = \frac{L}{4 \pi H} * \int_{-H/2}^{H/2}{ \frac{1}{D^2 + x^2} dx}$
+
+$F = \frac{L}{4 \pi H} * \left[\frac{1}{D}*\arctan(\frac{x}{D})\right]_{-H/2}^{H/2}$
+
+$F = \frac{L}{4 \pi H D} * \left(\arctan(\frac{H / 2}{D}) - \arctan(\frac{-H / 2}{D})\right)$
+
+$F = \frac{L}{4 \pi H D} * \left(\arctan(\frac{H}{2 D}) + \arctan(\frac{H}{2 D})\right)$
+
+$F = \frac{L}{2 \pi H D} * \arctan(\frac{H}{2 D})$
+
+$Q.E.D.$
