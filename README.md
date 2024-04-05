@@ -36,7 +36,7 @@ The distance from a point $x$ on the rod to the observer:
 $D_{seg} = \sqrt{D^2 + x^2}$
 
 The luminosity of an infinitely small segment of the rod:
-$L_{seg} = \frac{L dx}{H}$
+$L_{seg} = L * \frac{dx}{H}$
 
 ### Process
 
