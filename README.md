@@ -1,5 +1,5 @@
 # flux-of-a-luminous-rod
-Equation governing the flux experienced by a zero dimensional observer positioned on the perpendicular bisector of a uniform luminous one dimensional rod:
+Equation governing the flux experienced by an observer of negligible size positioned on the perpendicular bisector of a uniform luminous one dimensional rod:
 
 $$F = \frac{L}{2 \pi H D} * arctan(\frac{H}{2 D})$$
 
